@@ -17,6 +17,7 @@ The meal tracker is a back-end application that will allow users to keep track o
 
 ### Screenshot
 ---
+* Meal Tracker backend application CLI execution
 
-![image info](./readmeImage/mealTracker.png)
+    ![image info](./readmeImage/mealTracker.png)
 
