@@ -1,27 +1,46 @@
+package com.swapna.caloriecounter;
 
-class Food{
+import java.util.ArrayList;
 
+/**
+ * Holds information about a food.
+ */
+public class Food {
 
-double getCalories(){
+    private ArrayList<Category> categories = new ArrayList<>();
+    private Consumable consumable;
 
-}
-double getFat(){
+    public Food(Consumable consumable) {
+        this.consumable = consumable;
+    }
 
-}
-double getCarbohydrates(){
+    public double getCalories() {
+        return consumable.getCalories();
+    }
 
-}
-double getProtein(){
+    public double getFat() {
+        return consumable.getFat();
+    }
 
-}
-double getName(){
+    public double getCarbohydrates() {
+        return consumable.getCarbohydrates();
+    }
 
-}
-ArrayList<Category> getCategories(){
+    public double getProtein() {
+        return consumable.getProtein();
+    }
 
-}
-void addCategory(){
-    
-}
+    public String getName() {
+        return consumable.getName();
+    }
 
+    public ArrayList<Category> getCategories() {
+        return categories;
+    }
+
+    public void addCategory(Category category) {
+        if (category != null) {
+            categories.add(category);
+        }
+    }
 }

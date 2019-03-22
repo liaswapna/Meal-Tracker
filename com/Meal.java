@@ -1,27 +1,68 @@
+package com.swapna.caloriecounter;
 
-class Meal{
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
+/**
+ * Holds information about a meal.
+ */
+public class Meal {
 
+    private String name;
+    private ArrayList<Food> foods = new ArrayList<>();
 
-double getCalories(){
+    public Meal(String name, ArrayList<Food> foods) {
+        this.name = name;
+        if (foods != null && !foods.isEmpty()) {
+            this.foods.addAll(foods);
+        }
+    }
 
-}
-double getFat(){
+    // Sum of all getCalories of Foods.
+    public double getCalories() {
+        return foods.stream()
+                .mapToDouble(Food::getCalories)
+                .sum();
+    }
 
-}
-double getCarbohydrates(){
+    // Sum of all getFat of Foods.
+    public double getFat() {
+        return foods.stream()
+                .mapToDouble(Food::getFat)
+                .sum();
+    }
 
-}
-double getProtein(){
+    // Sum of all getCarbohydrates of Foods.
+    public double getCarbohydrates() {
+        return foods.stream()
+                .mapToDouble(Food::getCarbohydrates)
+                .sum();
+    }
 
-}
-String getName(){
+    // Sum of all getProtein of Foods.
+    public double getProtein() {
+        return foods.stream()
+                .mapToDouble(Food::getProtein)
+                .sum();
+    }
 
-}
-DateTime getMealTime(){
+    public ArrayList<Food> getFoods() {
+        return foods;
+    }
 
-}
-void viewFoods(){
+    public String getName() {
+        return name;
+    }
 
-}
+    public LocalDateTime getMealTime() {
+        return LocalDateTime.now();
+    }
+
+    // Print each food in the meal.
+    public void viewFoods() {
+        this.foods.forEach(food -> {
+            System.out.println(food.getName());
+        });
+    }
 }
