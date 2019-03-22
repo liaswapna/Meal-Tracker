@@ -27,7 +27,7 @@ public class MealTracker {
     public void viewMeals() {
         meals.forEach(meal -> {
             String mealTimeString = meal.getMealTime()
-                    .format(DateTimeFormatter.ofPattern("MM/DD/YYYY HH24:MM"));
+                    .format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm"));
             System.out.println(mealTimeString + ": " + meal.getName());
         });
     }
