@@ -8,6 +8,8 @@ The meal tracker is a back-end application that will allow users to keep track o
 ---
 * Clone down repo ``` git clone git@github.com:liaswapna/Meal-Tracker.git```.
 * Navigate to the repo ```cd Meal-Tracker```.
+* Run ``` javac com/main/StartProgram.java ```.
+* Run ``` java com.main.StartProgram ```.
 
 ### Technologies Used
 ---
@@ -16,5 +18,5 @@ The meal tracker is a back-end application that will allow users to keep track o
 ### Screenshot
 ---
 
-![image info](./public/styles/images/homePage.png)
+![image info](./readmeImage/mealTracker.png)
 
