@@ -1,4 +1,4 @@
-package com.swapna.caloriecounter;
+package com;
 
 import java.util.ArrayList;
 

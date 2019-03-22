@@ -1,4 +1,4 @@
-package com.swapna.caloriecounter.main;
+package com.main;
 
 /**
  * Holds information about a user.

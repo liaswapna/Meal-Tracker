@@ -1,4 +1,4 @@
-package com.swapna.caloriecounter;
+package com;
 
 /**
  * The attributes of anything that can be consumed / eaten.

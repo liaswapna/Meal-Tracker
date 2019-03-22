@@ -1,8 +1,8 @@
-package com.swapna.caloriecounter.main;
+package com.main;
 
-import com.swapna.caloriecounter.Category;
-import com.swapna.caloriecounter.Food;
-import com.swapna.caloriecounter.Meal;
+import com.Category;
+import com.Food;
+import com.Meal;
 
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
